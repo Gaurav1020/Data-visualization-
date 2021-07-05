@@ -3,7 +3,7 @@
 
 
 #National Basketball Association player stats
-nba <- read.csv("Dataset/ppg2008.csv")
+nba <- read.csv("ppg2008.csv")
 nba
 
 nba <- nba[order(nba$PTS),]
@@ -25,7 +25,7 @@ nba_heatmap <- heatmap(nba_matrix, Rowv=NA, Colv=NA, col = heat.colors(256),
                        main = "NBA Payer Stats in 2008")
 
 library(viridis)
-nba_heatmap <- heatmap(nba_matrix, Rowv=NA, col = viridis(25, direction = -1), 
+nba_heatmap <- heatmap(nba_matrix, Rowv=NA, Colv=NA, col = viridis(25, direction = -1), 
                        scale="column", margins=c(5,10),
                        xlab = "NBA Player Stats",
                        ylab = "NBA Players",

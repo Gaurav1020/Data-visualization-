@@ -11,10 +11,10 @@ fig
 
 #Example-2
 library(plotly)
-install.packages(listviewer)
+#install.packages("listviewer")
 library(listviewer)
 
-df <- read.csv("Dataset/worldhappiness.csv")
+df <- read.csv("worldhappiness.csv")
 head(df)
 s <- schema()
 agg <- s$transforms$aggregate$attributes$aggregations$items$aggregation$func$values
@@ -54,7 +54,7 @@ fig <- fig %>% layout(
   updatemenus = list(
     list(
       x = 0.25,
-      y = 1.04,
+      y = 10,
       xref = 'paper',
       yref = 'paper',
       yanchor = 'top',

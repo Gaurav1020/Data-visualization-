@@ -136,10 +136,10 @@ p1 <- ggplot(diamonds, aes(x=carat, y=price, color=cut)) +
   theme(legend.position="none",
         axis.title.x = element_text(color="blue", size=14, face="bold"),
         axis.title.y = element_text(color="#993333", size=14, face="bold")) +  
-  labs(title="legend.position='none'")  
+  labs(title="legend.position='none'") 
 
 # legend at top
-p2 <- ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + geom_smooth() + theme(legend.position="top") + labs(title="legend.position='top'")  
+p2 <- ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + geom_smooth() + theme(legend.position="top") + labs(title="legend.position='top'")
 
 # legend inside the plot.
 p3 <- ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + geom_smooth() + labs(title="legend.position='coords inside plot'") + theme(legend.justification=c(1,0), legend.position=c(1,0)) 

@@ -31,7 +31,7 @@ SH: Sacrifice hits. Numeric
 "
 #rename(data, g=no.of games)
 # Step 1
-data <- read.csv("Dataset/lahman-batting.csv")
+data <- read.csv("lahman-batting.csv")
 data
   
 # Step 2
